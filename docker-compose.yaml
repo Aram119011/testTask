@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  db:
+    image: mysql:8.0
+    container_name: mysql_db
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root_password         # Установите пароль для пользователя root
+      MYSQL_DATABASE: combinations_db            # Имя базы данных
+      MYSQL_USER: user                           # Имя пользователя
+      MYSQL_PASSWORD: user_password              # Установите пароль для нового пользователя
+    ports:
+      - "3307:3306"                              # Порт MySQL
+    volumes:
+      - mysql_data:/var/lib/mysql                  # Хранение данных на хосте
+
+volumes:
+  mysql_data:

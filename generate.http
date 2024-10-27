@@ -1,0 +1,8 @@
+
+POST http://localhost:3000/api/generate
+content-type: application/json
+
+{
+  "items": [1,2,3],
+  "length": 2
+}
