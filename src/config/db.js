@@ -9,7 +9,6 @@ const dbConfig = {
     database: process.env.DB_NAME,
     port: process.env.DB_PORT
 };
-console.log(dbConfig, 'wwwwwwwwwwwwwww')
 
 const pool = mysql.createPool(dbConfig);
 

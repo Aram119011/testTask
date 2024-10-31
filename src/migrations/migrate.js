@@ -1,5 +1,4 @@
 
-
 const db = require('../config/db');
 
 async function migrate() {

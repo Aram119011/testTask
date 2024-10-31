@@ -1,6 +1,4 @@
 
-
-
 function generateCombinations(arr, length) {
     const result = [];
     function combine(prefix, start) {

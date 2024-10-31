@@ -1,4 +1,4 @@
-// controllers/combinationController.js
+
 const pool = require('../config/db');
 const generateCombinations = require('../helpers/generateCombinations');
 
