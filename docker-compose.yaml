@@ -6,14 +6,14 @@ services:
     container_name: mysql_db
     restart: always
     environment:
-      MYSQL_ROOT_PASSWORD: root_password         # Установите пароль для пользователя root
-      MYSQL_DATABASE: combinations_db            # Имя базы данных
-      MYSQL_USER: user                           # Имя пользователя
-      MYSQL_PASSWORD: user_password              # Установите пароль для нового пользователя
+      MYSQL_ROOT_PASSWORD: root_password
+      MYSQL_DATABASE: combinations_db
+      MYSQL_USER: user
+      MYSQL_PASSWORD: user_password
     ports:
-      - "3307:3306"                              # Порт MySQL
+      - "3307:3306"
     volumes:
-      - mysql_data:/var/lib/mysql                  # Хранение данных на хосте
+      - mysql_data:/var/lib/mysql
 
 volumes:
   mysql_data:
